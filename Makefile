@@ -6,11 +6,12 @@ else
     PATHSEP := :
 endif
 
-# Update these paths with the correct paths to your Python executables
-PYTHON_EXEC := PATH-to-python.exe		"%localappdata%\Local\Programs\Python\Python311\python.exe"
-YAPF_PATH := PATH-to-yapf.exe			"%localappdata%\Local\Programs\Python\Python311\yapf.exe"
-MYPY_PATH := PATH-to-mypy.exe			"%localappdata%\Local\Programs\Python\Python311\mypy.exe"
-BUILD_PATH := PATH-to-pyinstaller.exe	"%localappdata%\Local\Programs\Python\Python311\pyinstaller.exe"
+# Update these paths with the correct paths to your Python executables in your Python installation folder
+# e.g. "%localappdata%\Local\Programs\Python\Python311\[exec].exe"
+PYTHON_EXEC := PATH-to-python.exe
+YAPF_PATH := PATH-to-yapf.exe
+MYPY_PATH := PATH-to-mypy.exe
+BUILD_PATH := PATH-to-pyinstaller.exe
 
 all: yapf mypy build
 
