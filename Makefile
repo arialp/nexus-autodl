@@ -7,7 +7,7 @@ else
 endif
 
 # Update these paths with the correct paths to your Python executables in your Python installation folder
-# e.g. "%localappdata%\Local\Programs\Python\Python311\[exec].exe"
+# e.g. "%localappdata%\Local\Programs\Python\Python311\python.exe" and "\Python311\Scripts\[exec].exe"
 PYTHON_EXEC := PATH-to-python.exe
 YAPF_PATH := PATH-to-yapf.exe
 MYPY_PATH := PATH-to-mypy.exe
