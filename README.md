@@ -11,41 +11,33 @@ Using a bot to download from Nexus is in direct violation of their TOS:
 
 Use this at your own risk.
 
-# Changelog
-```
-Updated Readme.md
-Added an icon to the exe
-Changed code a little so as to make it buildable 
-Added instructions to build the Program
-Added comments to the code
-```
-## Download
-Check [Releases](https://github.com/Kickskii/fork-NexusAutodl/releases) 
-## BuildingNexus-AutoDL
+## Building nexus-autodl
 
-install [Python 3.7](https://www.python.org/downloads/release/python-370/)
-#### upgrade pip
+Install latest version of [Python](https://www.python.org/downloads/)
+
+### Upgrade pip
 ```python -m pip install --upgrade pip``` 
-#### Install required dependencies 
-``` pip install yapf
+
+### Install required dependencies 
+```
+pip install yapf
 pip install mypy
 pip install pyinstaller
 pip install pillow
 pip install pyautogui
 pip install numpy
 pip install click
-pip install opencv-python==3.4.2.16
-pip install opencv-contrib-python==3.4.2.16
+pip install opencv-python
 python -m pip install types-Pillow
 ```
-install Make from [GnuWin32](https://sourceforge.net/projects/gnuwin32/files/make/3.81/) and add the executable to PATH
-navigate to folder with makefile 
-edit Makefile and add the Executables required inside
-run in powershell 
-```make all```
-or use 
-```
-C://path//to//make.exe path//to//makefile
-```
-#### you can replace the images in templates folder and build the project in case nexus decides to change their download button currently it is working as intended to download off of wabbajack
-#### current code requires python3.7 use opencv version 3.4.2.16 otherwise SIFT does not work could maybe fix using ORB function for newer OpenCV version
+Download the repo as zip, or, `git clone https://github.com/arialp/nexus-autodl.git` in bash
+
+Download and run Make from [GnuWin32](https://sourceforge.net/projects/gnuwin32/files/make/3.81/) and add the executable to PATH,
+
+Open Makefile with Notepad++ (or any other equivalent),
+
+Edit Makefile and add the required exec paths,
+
+In powershell, run `make all` from the repo folder.
+
+#### If nexus changes the button style you can always make new screenshots of the button and overwrite the ones in /templates/
