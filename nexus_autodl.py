@@ -60,7 +60,7 @@ def _find_and_click(templates: List[_Template]) -> None:
     screenshot_image = pyautogui.screenshot()
     screenshot = _image_to_grayscale_array(screenshot_image)
     for template in templates:
-        # SIFT patent expired in 2015, so it has been moved to the main OpenCV repository.
+        # SIFT patent expired in 2020, so it has been moved to the main OpenCV repository.
         # "pip install opencv-python" only.
         sift = cv.SIFT.create()  # pylint: disable=no-member
         _, template_descriptors = sift.detectAndCompute(template.array, mask=None)
